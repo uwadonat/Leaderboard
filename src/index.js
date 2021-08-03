@@ -1,6 +1,5 @@
-import './style.css';
-import leaderboardlayout from './leaderboardlayout';
+import leaderboardlayout from "./leaderboardlayout"
 
-const layout = leaderBoardLayout();
-const main = document.querySelector('.main');
+const layout = leaderboardlayout();
+const main = document.getElementById('main');
 main.appendChild(layout);
