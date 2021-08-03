@@ -1,3 +1,4 @@
+import './style.css'
 import leaderboardlayout from "./leaderboardlayout"
 
 const layout = leaderboardlayout();
