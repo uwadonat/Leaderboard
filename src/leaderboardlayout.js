@@ -7,6 +7,10 @@ export default function leaderboardlayout() {
   ];
   const container = document.createElement('div');
   container.className = 'container';
+  const errorMessage = document.createElement('div');
+  errorMessage.id = 'error-message';
+  errorMessage.className = 'error-message';
+  container.appendChild(errorMessage);
   const leaderboardTitle = document.createElement('h1');
   leaderboardTitle.textContent = 'Leaderboard';
   container.appendChild(leaderboardTitle);
