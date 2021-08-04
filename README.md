@@ -4,7 +4,7 @@
 
 > This project is about set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features.
 
-![Screenshot]()
+![Screenshot](https://github.com/uwadonat/Leaderboard/blob/setup-project/images/Screenshot.png)
 
 Additional description of the project and its features.
 
