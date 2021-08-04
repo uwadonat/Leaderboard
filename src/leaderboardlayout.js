@@ -6,17 +6,21 @@ export default function leaderboardlayout() {
     leaderboardTitle.textContent = 'Leaderboard';
     container.appendChild(leaderboardTitle);
     const leaderboard = document.createElement('div');
-    leaderboard.className = leaderboard;
+    leaderboard.className = 'leaderboard';
     const scoresdiv = document.createElement('div');
     scoresdiv.className = 'scoresdiv';
     const reflesh = document.createElement('div');
     reflesh.className = 'reflesh';
     const recentScores = document.createElement('h2');
     recentScores.textContent = 'Recent scores';
-    const refleshBtn = document.createElement('h2');
-    refleshBtn.textContent = 'Reflesh';
+    const refleshBtn = document.createElement('div');
+    const refleshBtnInput = document.createElement('input');
+    refleshBtnInput.type = 'button';
+    refleshBtnInput.id = 'reflesh-btn'
+    refleshBtnInput.value = 'Reflesh';
     reflesh.appendChild(recentScores);
     reflesh.appendChild(refleshBtn);
+    refleshBtn.appendChild(refleshBtnInput);
     scoresdiv.appendChild(reflesh);
     const scoreList = document.createElement('div');
     scoreList.className = 'scoreList';
@@ -35,6 +39,7 @@ export default function leaderboardlayout() {
     const addScore = document.createElement('div');
     addScore.className = 'add-score';
     const addScoreTitle = document.createElement('h2');
+    addScoreTitle.className = 'addScore-title';
     addScoreTitle.textContent = 'Add Your Scores';
     const addScoreForm = document.createElement('div');
     addScoreForm.className = 'add-form';
