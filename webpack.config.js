@@ -17,18 +17,18 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-            {
-                loader: "style-loader"
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: false,
+              importLoaders: 2,
+              sourceMap: true,
             },
-            {
-                loader: "css-loader",
-                options: {
-                    modules: false,
-                    importLoaders: 2,
-                    sourceMap: true
-                }
-            }
-        ]
+          },
+        ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
