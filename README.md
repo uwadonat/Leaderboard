@@ -2,9 +2,11 @@
 
 # To do list testing
 
-> This project is about set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features.
+### This project is about :
+- set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features 
+- working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.
 
-![Screenshot](https://github.com/uwadonat/Leaderboard/blob/setup-project/images/Screenshot.png)
+![Screenshot](https://github.com/uwadonat/Leaderboard/blob/hit-api/images/Screenshot.png)
 
 Additional description of the project and its features.
 
@@ -16,7 +18,7 @@ Additional description of the project and its features.
 
 ## Live Demo
 
-[live demo]()
+[live demo](https://pensive-euler-38aebe.netlify.app)
 
 ### Setup
 
