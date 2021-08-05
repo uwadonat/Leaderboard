@@ -16,7 +16,7 @@ Additional description of the project and its features.
 
 ## Live Demo
 
-[live demo]()
+[live demo](https://pensive-euler-38aebe.netlify.app)
 
 ### Setup
 
