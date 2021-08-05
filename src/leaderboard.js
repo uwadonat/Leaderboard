@@ -22,7 +22,7 @@ export default class LeaderBoard {
            document.getElementById('errorDiv').textContent = 'Bad Request, Please Try Again!!!';
            setTimeout(() => {
              document.getElementById('errorDiv').innerHTML = '';
-           }, 3500);
+           }, 2000);
          } else { this.setId(response); }
        }
 
