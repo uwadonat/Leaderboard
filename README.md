@@ -53,4 +53,3 @@ Give a ⭐️ if you like this project!
 - <a href="https://www.microverse.org/" target="_blank">microverse.org</a>
 - <a href="https://netlify.com/" target="_blank">netlify</a>
 </a>
-</div>
