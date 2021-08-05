@@ -1,5 +1,5 @@
 import './style.css';
-import LeaderBoard from './leaderboard';
+import LeaderBoard from './leaderboard.js';
 import leaderboardlayout from './leaderboardlayout.js';
 
 const layout = leaderboardlayout();

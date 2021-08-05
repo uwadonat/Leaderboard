@@ -1,19 +1,19 @@
 export default class LeaderBoard {
-    constructor() {
-      this.id = null;
-      this.flag = true;
-    }
+  constructor() {
+    this.id = null;
+    this.flag = true;
+  }
 
-    async setId(id) {
-        let tokenId = id.result.substring(id.result.indexOf(':'));
-        tokenId = tokenId.substring(tokenId.lastIndexOf(':') + 1, tokenId.lastIndexOf(' '));
-        this.id = tokenId;
-      }
-    
-      getId() {
-        return this.id;
-      }
-    
+  async setId(id) {
+    let tokenId = id.result.substring(id.result.indexOf(':'));
+    tokenId = tokenId.substring(tokenId.lastIndexOf(':') + 1, tokenId.lastIndexOf(' '));
+    this.id = tokenId;
+  }
+
+  getId() {
+    return this.id;
+  }
+
        createGame=async (name) => {
          const gameName = { name };
          const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
@@ -27,23 +27,23 @@ export default class LeaderBoard {
        }
 
        displayScores=async () => {
-        if (this.id !== null) {
-          const scoresList = document.getElementById('ulList');
-          while (scoresList.firstChild) {
-            scoresList.removeChild(scoresList.firstChild);
-          }
-          const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${encodeURIComponent(this.id)}/scores/`;
-          const response = await this.fetchApi(url, 'GET');
-          response.result.forEach((element) => {
-            const item = document.createElement('li');
-            item.className = 'scoresList-items';
-            item.id = 'scoresList-items';
-            item.textContent = `${element.user}:${element.score}`;
-            scoresList.appendChild(item);
-          });
-        }
-      }
-   
+         if (this.id !== null) {
+           const scoresList = document.getElementById('ulList');
+           while (scoresList.firstChild) {
+             scoresList.removeChild(scoresList.firstChild);
+           }
+           const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${encodeURIComponent(this.id)}/scores/`;
+           const response = await this.fetchApi(url, 'GET');
+           response.result.forEach((element) => {
+             const item = document.createElement('li');
+             item.className = 'scoresList-items';
+             item.id = 'scoresList-items';
+             item.textContent = `${element.user}:${element.score}`;
+             scoresList.appendChild(item);
+           });
+         }
+       }
+
       addScore=async () => {
         const name = document.getElementById('name').value;
         const score = document.getElementById('score').value;
@@ -72,7 +72,7 @@ export default class LeaderBoard {
         }
         return true;
       }
-   
+
       fetchApi=async (url, method, jsonBody = null) => {
         const response = await fetch(url, {
           headers: {
@@ -87,5 +87,4 @@ export default class LeaderBoard {
           .catch(() => { this.flag = false; });
         return response;
       }
-
 }
