@@ -6,7 +6,7 @@
 - set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features 
 - working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.
 
-![Screenshot](https://github.com/uwadonat/Leaderboard/blob/hit-api/images/Screenshot.png)
+![Screenshot](https://github.com/uwadonat/Leaderboard/blob/final-touches/images/Screenshot.png)
 
 Additional description of the project and its features.
 
@@ -16,7 +16,7 @@ Additional description of the project and its features.
 - HTML, CSS
 - Webpack
 
-## Live Demo
+## 🔴  Live Demo
 
 [live demo](https://pensive-euler-38aebe.netlify.app)
 
@@ -26,9 +26,9 @@ Additional description of the project and its features.
 
 2. run: `code . ` to open code in your favorite text editor
 
-3. run: `npm i`
+3. run: `npm i` to install dependencies
 
-4. run: `npm run start`
+4. run: `npm run start` to start the game
 
 ## Authors
 
@@ -50,4 +50,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Odin book library project at Java Script Module
+- <a href="https://www.microverse.org/" target="_blank">microverse.org</a>
+- <a href="https://netlify.com/" target="_blank">netlify</a>
+</a>

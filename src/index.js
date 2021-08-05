@@ -9,7 +9,7 @@ main.appendChild(layout);
 const game = new LeaderBoard();
 
 async function startGame() {
-  await game.createGame('my cool game');
+  await game.createGame('DEEP GAME');
 }
 startGame();
 
