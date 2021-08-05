@@ -4,6 +4,8 @@
   padding: 20px;
   margin-top: 100px;
   background-color: rgb(248, 242, 232);
+  border: 1px solid burlywood;
+  border-radius: 3px;
 }
 
 button,
